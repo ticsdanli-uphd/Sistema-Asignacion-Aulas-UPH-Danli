@@ -8,7 +8,9 @@ Aplicación estática compatible con GitHub Pages. La base de datos funciona con
 - Administración de aulas, capacidades, conexión y asignación automática/manual.
 - Detección de choques por aula, día y bloques horarios.
 - Fusión automática: registros con el mismo docente, día y horas reciben la misma aula.
-- Prioridad de Aulas 8, 9, 10, 4 y 6 para clases con estudiantes de otras sedes.
+- Bloqueo de asignaciones manuales que intenten usar un aula ya ocupada en el mismo día y horario.
+- Horarios ordenados cronológicamente en mañana, tarde y noche.
+- Prioridad exacta para grupos con estudiantes de otras sedes: AULA 9, AULA 10, AULA 8, AULA 6 y AULA 4, respetando capacidad y disponibilidad.
 - AULA 7 y laboratorios configurados exclusivamente para selección manual.
 - Advertencias por capacidad, choque y asignaturas pendientes.
 - Horarios completos de lunes a domingo e impresión de una hoja por día.
