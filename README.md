@@ -48,13 +48,13 @@ Si existen clases sin aula, el sistema muestra una advertencia antes de imprimir
 
 En **Asignaturas** use el botón **Descargar plantilla**. El sistema descarga una plantilla completamente en blanco, únicamente con los encabezados oficiales. Complete el archivo sin cambiar esos encabezados y luego pulse **Importar archivo**.
 
-La plantilla oficial utiliza: `Período`, `Campus`, `Código`, `Asignatura`, `Modalidad`, `Sección`, `Días`, `Horas`, `Catedrático`, `Correo Institucional` y `Campus Catedrático`.
+La plantilla oficial utiliza: `Período`, `Campus`, `Código`, `Asignatura`, `Modalidad`, `Sección`, `Días`, `Horas`, `Catedrático`, `Correo Institucional`, `Campus Catedrático` y `Matriculados`.
 
 - Acepta archivos `.xlsx`, `.xls` y `.csv`.
 - Reconoce encabezados con o sin tilde y también nombres anteriores como `Docente`, `Correo` y `Sede Docente`.
 - Si una asignatura tiene varios días separados por coma, espacio, diagonal o punto y coma, crea el registro correspondiente para cada día.
 - Al volver a importar el mismo código, período, campus, sección, día y horario, actualiza el registro existente en lugar de duplicarlo.
-- La matrícula es opcional en esta plantilla; si se agrega una columna `Matrícula`, el sistema la usa para validar capacidad.
+- La columna `Matriculados` se usa para validar la capacidad del aula. Debe contener únicamente el número de estudiantes, por ejemplo `33`.
 
 ## Seguridad y respaldo
 
