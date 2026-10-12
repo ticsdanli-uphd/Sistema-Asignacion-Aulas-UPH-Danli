@@ -63,3 +63,10 @@ También puede compartir el enlace directo agregando `?vista=docente` al final d
 - Si una o ambas clases están fusionadas, el intercambio se aplica a todas las asignaturas de cada grupo.
 - También se permite intercambiar con AULA TELEDOCENCIA respetando sus reglas especiales.
 
+## Impresión completa
+
+- `Imprimir día seleccionado` ajusta automáticamente el tamaño de la tabla para colocar todas las filas y columnas del día activo en una sola hoja física horizontal.
+- `Imprimir horario completo` genera una sola tabla con todas las asignaturas de lunes a domingo.
+- El horario completo se ordena por día, hora y grupo fusionado e incluye código, asignatura, docente, día, hora y aula.
+- La impresión utiliza orientación horizontal y un formato compacto para aprovechar la hoja completa. Si la cantidad de clases excede físicamente una página, el navegador continuará automáticamente en páginas adicionales sin omitir filas.
+
