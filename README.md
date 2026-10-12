@@ -38,3 +38,20 @@ La asignación automática utiliza este orden tanto para clases con alumnos de o
 
 El orden se aplica únicamente entre aulas disponibles y con capacidad suficiente. Si ninguna de las prioritarias puede recibir el grupo, el sistema continúa con las demás aulas automáticas.
 
+## Consulta para docentes desde celular
+
+1. Termine la asignación de aulas en el equipo administrador.
+2. En Configuración, pulse `Descargar horarios para docentes`.
+3. Reemplace el archivo `data/horarios-publicos.json` del proyecto de GitHub con el archivo descargado.
+4. Los docentes pueden abrir la opción `Consulta docente` desde el celular y buscar su nombre o correo institucional.
+
+También puede compartir el enlace directo agregando `?vista=docente` al final de la dirección de GitHub Pages. Esta solución no utiliza una base de datos externa: los horarios públicos se leen desde un archivo JSON incluido dentro del mismo sitio.
+
+## Intercambio de aulas
+
+- En Asignaturas, pulse `Cambiar aula` junto a la clase que desea modificar.
+- Seleccione otra asignatura con aula y confirme el intercambio.
+- Antes de guardar, el sistema valida la capacidad de ambas aulas y los choques en ambos horarios.
+- Si una o ambas clases están fusionadas, el intercambio se aplica a todas las asignaturas de cada grupo.
+- También se permite intercambiar con AULA TELEDOCENCIA respetando sus reglas especiales.
+
