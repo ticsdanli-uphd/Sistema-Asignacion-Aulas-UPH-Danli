@@ -38,6 +38,14 @@ La asignación automática utiliza este orden tanto para clases con alumnos de o
 
 El orden se aplica únicamente entre aulas disponibles y con capacidad suficiente. Si ninguna de las prioritarias puede recibir el grupo, el sistema continúa con las demás aulas automáticas.
 
+### Ajuste por matrícula y continuidad docente
+
+- Entre las aulas disponibles, el sistema selecciona la capacidad más cercana a la matrícula total del grupo.
+- Nunca asigna un grupo a un aula cuya capacidad sea menor que la matrícula.
+- Evita ocupar un aula grande con una matrícula pequeña cuando existe otra aula adecuada.
+- Si un docente tiene varias clases durante el mismo día, intenta conservar su aula anterior cuando está disponible, tiene capacidad y no desperdicia más de cinco espacios respecto de la mejor alternativa.
+- El orden de aulas prioritarias se utiliza entre opciones que estén dentro del mismo rango de ajuste de cinco espacios.
+
 ## Consulta para docentes desde celular
 
 1. Termine la asignación de aulas en el equipo administrador.
