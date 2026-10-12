@@ -7,6 +7,8 @@ Aplicación estática compatible con GitHub Pages. No utiliza Supabase ni ningun
 - Los datos se guardan con IndexedDB dentro del navegador del equipo.
 - Se pueden descargar y restaurar respaldos JSON.
 - Los datos son independientes en cada navegador o computadora; use el respaldo para trasladarlos.
+- El botón `Vaciado completo`, ubicado en Asignaturas, elimina toda la información local después de dos confirmaciones y restaura las aulas predeterminadas.
+- El botón `Asignar automáticamente` también está disponible directamente en el bloque de Asignaturas.
 
 ## AULA TELEDOCENCIA
 
@@ -20,6 +22,7 @@ Aplicación estática compatible con GitHub Pages. No utiliza Supabase ni ningun
 
 - Se reconocen automáticamente cuando tienen el mismo docente, el mismo día y exactamente las mismas horas.
 - Las asignaturas fusionadas se procesan como un solo grupo y reciben la misma aula.
+- En Asignaturas, Horarios y la impresión aparecen consecutivas dentro de un bloque resaltado con la etiqueta `FUSIONADA`.
 - Si el grupo no tiene aula disponible, se genera una sola alerta para todo el grupo.
 
 ## Prioridad de aulas
