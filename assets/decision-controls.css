@@ -1,0 +1,16 @@
+.alert-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.alert-actions button {
+  min-width: 190px;
+}
+
+@media (max-width: 520px) {
+  .alert-actions button {
+    width: 100%;
+  }
+}
