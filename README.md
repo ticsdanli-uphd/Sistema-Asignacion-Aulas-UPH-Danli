@@ -6,6 +6,8 @@ Aplicación estática compatible con GitHub Pages. No utiliza Supabase ni ningun
 
 - Los datos se guardan con IndexedDB dentro del navegador del equipo.
 - Cada cambio también crea una segunda copia automática en localStorage. Si IndexedDB aparece vacío, el sistema recupera esa copia al volver a abrirse.
+- Si IndexedDB está bloqueado o no funciona, el sistema activa automáticamente un modo alternativo basado completamente en localStorage.
+- El botón `Guardar ahora` permite forzar el guardado y confirmar que la información quedó almacenada en el navegador.
 - La sección Configuración muestra la fecha y hora del último guardado interno.
 - Se pueden descargar y restaurar respaldos JSON.
 - El sitio controla automáticamente su versión, invalida archivos antiguos y limpia las cachés administradas por el propio sistema sin borrar la base local.

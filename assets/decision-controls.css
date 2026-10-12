@@ -206,6 +206,11 @@
   font-size: 12px;
 }
 
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
 @media (max-width: 760px) {
   body {
     overflow-x: hidden;
@@ -221,6 +226,10 @@
   header .ghost {
     padding: 8px 10px;
     font-size: 11px;
+  }
+
+  .header-actions {
+    flex-direction: column;
   }
 
   nav {
