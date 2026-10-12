@@ -5,7 +5,11 @@ Aplicación estática compatible con GitHub Pages. No utiliza Supabase ni ningun
 ## Base de datos local
 
 - Los datos se guardan con IndexedDB dentro del navegador del equipo.
+- Cada cambio también crea una segunda copia automática en localStorage. Si IndexedDB aparece vacío, el sistema recupera esa copia al volver a abrirse.
+- La sección Configuración muestra la fecha y hora del último guardado interno.
 - Se pueden descargar y restaurar respaldos JSON.
+- El sitio controla automáticamente su versión, invalida archivos antiguos y limpia las cachés administradas por el propio sistema sin borrar la base local.
+- La interfaz es responsiva para computadoras, tabletas y celulares; en pantallas pequeñas adapta botones, formularios, navegación y tablas desplazables.
 - Los datos son independientes en cada navegador o computadora; use el respaldo para trasladarlos.
 - El botón `Vaciado completo`, ubicado en Asignaturas, elimina toda la información local después de dos confirmaciones y restaura las aulas predeterminadas.
 - El botón `Asignar automáticamente` también está disponible directamente en el bloque de Asignaturas.
@@ -66,6 +70,7 @@ También puede compartir el enlace directo agregando `?vista=docente` al final d
 ## Impresión completa
 
 - `Imprimir día seleccionado` ajusta automáticamente el tamaño de la tabla para colocar todas las filas y columnas del día activo en una sola hoja física horizontal.
+- En la impresión del día seleccionado, cada grupo fusionado aparece en una sola fila. Sus códigos y nombres se combinan, mientras docente, día, horas y aula se muestran una sola vez.
 - `Imprimir horario completo` genera una sola tabla con todas las asignaturas de lunes a domingo.
 - El horario completo se ordena por día, hora y grupo fusionado e incluye código, asignatura, docente, día, hora y aula.
 - La impresión utiliza orientación horizontal y un formato compacto para aprovechar la hoja completa. Si la cantidad de clases excede físicamente una página, el navegador continuará automáticamente en páginas adicionales sin omitir filas.

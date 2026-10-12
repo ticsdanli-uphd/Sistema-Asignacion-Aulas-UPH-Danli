@@ -205,3 +205,95 @@
   background: #fff6db;
   font-size: 12px;
 }
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: auto;
+    min-height: 68px;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  header .ghost {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 0 8px;
+  }
+
+  nav button {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .actions button,
+  .actions .file {
+    width: 100%;
+    min-height: 42px;
+    text-align: center;
+  }
+
+  .table-wrap {
+    border: 1px solid #e4e5ec;
+    border-radius: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #classes table,
+  #schedule table {
+    min-width: 850px;
+  }
+
+  .room-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  dialog form {
+    padding: 16px;
+  }
+
+  .modal-actions {
+    flex-wrap: wrap;
+  }
+
+  .modal-actions button {
+    flex: 1 1 140px;
+  }
+}
+
+@media (max-width: 460px) {
+  .actions,
+  .room-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand h1 {
+    font-size: 16px;
+  }
+
+  .mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .card,
+  .panel,
+  .room {
+    padding: 14px;
+  }
+}
